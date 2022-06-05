@@ -1,0 +1,38 @@
+Git-Bash 업로드 방법
+1) Github-Practice에 폴더 두기
+2) git add . 입력
+3) git commit -m "memo in here" 입력
+4) git push origin main 입력
+
+or
+
+cmd 창에서
+1) cd Github-Practice
+2) git add .
+3) git commit -m "memo in here" 입력
+4) git push
+
+_______________________________________________________________________________
+Git-Bash 다운로드 방법
+1) git init 입력(Github-Practice 폴더를 메인으로 두고)
+2) git remote '프로젝트 Code 복사' 입력
+3) git pull origin main 입력
+
+https://github.com/ox1128/Github-Practice.git
+
+or
+
+cmd 창에서
+1) git config --global user.name ox1128
+2) git config --global user.email ox1128@gmail.com
+3) cd C:\Users\PIAI\Developer
+4) git clone https://github.com/ox1128/Github-Practice.git
+_______________________________________________________________________________
+* cd Github-Practice 폴더이동하기
+* cd 폴더 나가기
+* ls 해당 폴더 내에 파일 보기
+* git init 감시대상폴더 정하기(Github-Practice를 메인으로 두고 git init 입력)
+_______________________________________________________________________________
+
+Office Upload Test Memo
+ 
