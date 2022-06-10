@@ -1,0 +1,26 @@
+//비교 연산자
+<   >   <=  >=  ==  !=
+
+a = 3 (할당, a에 3을 넣어주는 것)
+a != 3 a는 3이 아니다. //boolean형
+
+//동등 연산자
+const a = 1;
+const b = "1";
+
+console.log(a == b); true 반환  //동등연산자
+console.log(a === b); false 반환    //일치연산자, type까지 비교해줌
+
+//조건문
+if문(만약)
+const age = 30;
+
+if(age > 19) {
+    console.log('환영합니다.');
+}
+else if (age === 19) {
+    console.log('수능 잘 치세요.');
+}
+else {
+    console.log('안녕히가세요');
+}

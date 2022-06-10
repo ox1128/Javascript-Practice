@@ -1,0 +1,36 @@
+//연산자
++더하기   -빼기   *곱하기   /나누기   %나머지
+
+나머지를 쓰는 곳
+홀수: X % 2 = 1
+짝수: Y % 2 = 0
+
+거듭제곱
+const num = 2**3;
+
+우선순위
+*/  >   +- (적절히 괄호 사용하기)
+
+//연산자 줄여쓰기
+let num = 10;
+//num = num += 5;
+num += 5;
+
+console.log(num);
+
+
+//증가 연산자, 감소 연산자
+
+let num = 10;
+let result = num++; (뒤에 적으면 증가시키기 전의 값을 result에 넣음)
+console.log(num);
+
+let num = 10;
+let result = ++num;(증가시킨 값을 result에 넣음)
+console.log(result);
+
+
+
+
+
+
