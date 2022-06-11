@@ -1,0 +1,52 @@
+//논리연산자
+
+|| or
+여러개 중 하나라도 true 면 true
+즉, 모든 값이 false 일때만 false를 반환
+첫번째 true를 발견하는 즉시 평가를 멈춤
+
+&& and
+모든 값이 true면 true
+즉, 하나라도 false 면 false를 반환
+첫번째 false를 발견하는 즉시 평가를 멈춤
+
+!  not
+true면 false
+false면 true
+_______________________________________________________________________________
+//AND
+
+const name = "Mike";
+const age = 30;
+
+if(name === 'Mike' && age > 19) {
+  console.log('통과');
+}
+else {
+  console.log('실패')  
+}
+_______________________________________________________________________________
+//NOT
+
+const age = prompt('나이가..?');
+const isAge = age > 19;
+
+if(!isAge) {
+  console.log('돌아가')
+}
+
+
+console.log('_____________')
+_______________________________________________________________________________
+//우선순위
+
+const gender = 'M';
+const name = 'Jane';
+const isAdult = true;
+
+if(gender === 'M' && (name === 'Mike' || isAdult)) {
+  console.log('통과')
+}
+else {
+  console.log('돌아가')
+}
