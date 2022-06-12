@@ -1,0 +1,99 @@
+//함수(function)
+//예시
+   함수  함수명  매개변수
+function sayHello(name){
+   console.log(`Hello, ${name}`);
+}
+sayHello('Mike');
+_______________________________________________________________________________
+//함수작성
+//매개변수가 없는 함수
+function showError(){
+  alert('에러가 발생하였습니다. 새로고침 해주세요.');
+}
+
+showError();
+_______________________________________________________________________________
+//함수작성
+//매개변수가 있는 함수
+function sayHello(name) {
+   const msg = `Hello, ${name}`;
+   console.log(msg);
+}
+
+sayHello('Mike');
+sayHello('Tom');
+sayHello('Jane');
+_______________________________________________________________________________
+let msg = 'Hello';
+console.log('함수 호출 전')
+console.log(msg)
+
+function sayHello(name) {
+  if(name) {
+    msg += `, ${name}`;
+  }
+  console.log('함수내부');
+   console.log(msg);
+}
+
+sayHello('Mike');
+console.log('함수 호출 후')
+console.log(msg);
+_______________________________________________________________________________
+//전역변수와 지역변수
+let msg = "welcome"; //전역변수
+console.log(msg);
+
+function sayHello(name){
+  let msg = "Hello" //지역변수 (위 전역변수와 간섭하지 않음)
+  console.log(msg + ' ' + name);
+}
+
+sayHello('Mike');
+console.log(msg);
+
+*가급전 전역변수보다 지역변수를 사용하라.
+_______________________________________________________________________________
+//OR
+function sayHello(name){
+  let newName = name || 'friend';
+  let msg = `Hello, ${newName}`;
+  console.log(msg);
+}
+
+sayHello();
+sayHello('Jane');
+_______________________________________________________________________________
+//Default Value
+function sayHello(name = 'friend'){
+  let msg = `Hello, ${name}`;
+  console.log(msg);
+}
+
+sayHello();
+sayHello('Jane');
+_______________________________________________________________________________
+//return으로 값 반환
+function add (num1, num2){
+  return num1 + num2;
+}
+
+const result = add(2,3);
+console.log(result);
+_______________________________________________________________________________
+function showError(){
+  alert('에러가 발생하였습니다.');
+  return;
+  alert('이 코드는 절대 실행되지 않습니다.');
+}
+const result = showError();
+console.log(result);
+_______________________________________________________________________________
+//함수(funtions) Tips
+- 한번에 한 작업에 집중
+- 읽기 쉽고 어떤 동작인지 알 수 있게 네이밍
+showError //에러를 보여줌
+getName //이름을 얻어옴
+createUserData //유저데이터 생성
+checkLogin //로그인 여부 체크
