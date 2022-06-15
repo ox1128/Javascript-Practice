@@ -1,0 +1,56 @@
+//함수 표현식
+함수 선언문 - 어디서든 호출가능
+자유롭게 코딩 가능
+함수 표현식보다 선언문이 더 자유로움
+function sayHello(){
+  console.log('Hello');
+}
+함수 표현식 - 코드에 도달하면 생성
+let sayHello = function(){
+  console.log('Hello');
+}
+
+* 두 표현식은 호출할 수 있는 타이밍이 다름
+
+//화살표 함수
+ let add = function(num1, num2){
+  return num1 + num2;
+ }
+ __________________________________________________
+ 화살표 함수로 바꾸면
+
+ let add = (num1, num2) => {
+  return num1 + num2;
+ }
+__________________________________________________
+ return문은 중괄호가 아닌 일반괄호로 바꿀 수 있음
+
+let add = (num1, num2) => (
+  num1 + num2;
+)
+__________________________________________________
+return문이 한줄이라면 괄호도 생략가능
+
+let add = (num1,num2) => num1 + num2;
+__________________________________________________
+인수가 딱 하나라면 괄호 생략가능
+
+let sayHello = name => `Hello,${name}`;
+
+인수가 없는 함수라면 괄호생략 불가
+let showError = () => {
+  alert('error!');
+}
+__________________________________________________
+return문이 있어도 return전에 여러줄의 코드가 있으면 일반괄호 사용불가
+let add = function(num1,num2){
+  const result = num1 + num2;
+  return result;
+} 
+
+let add = (num1,num2) => {
+  const result = num1 + num2;
+  return result;
+}
+__________________________________________________
+

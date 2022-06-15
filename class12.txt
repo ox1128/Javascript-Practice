@@ -1,0 +1,49 @@
+//객체
+const superman = {
+  name:'clark',
+  age:33,
+}
+
+//객체에 접근
+superman.name   //'clark'
+superman['age'] //33
+
+//추가
+superman.gender = 'male';
+superman['hairColor'] = 'black';
+
+//삭제
+delete superman.hairColor;
+
+//Object - 단축 프로퍼티
+const name = 'clark';
+const age = 33;
+
+/*const superman = {
+  name: name,
+  age: age,
+  gender: 'male',
+}*/
+
+const supermen = {
+  name,
+  age,
+  gender:'male',
+}
+//Object - 프로퍼티 존재여부 확인
+const superman = {
+  name: 'clark',
+  age: 33,
+}
+
+superman,birthDay;  //undefined
+
+'birthDay' in superman; //false
+
+'age' in superman;  //true
+
+for-in 반복문
+for(let key in superman){
+  console.log(key)
+  console.log(superman[key])
+}
